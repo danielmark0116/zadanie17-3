@@ -1,3 +1,5 @@
+const osInfo = require('../modules/osInfo');
+
 process.stdin.setEncoding('utf-8');
 
 process.stdin.on('readable', function() {
@@ -15,6 +17,9 @@ process.stdin.on('readable', function() {
           `NODE Version: ${process.env.TERM_PROGRAM_VERSION}\n`
         );
         process.exit();
+      case '/os':
+        osInfo.osInfo();
+        break;
       case '/system-l':
         process.stdout.write(
           `Lang: ${process.env.LC_ALL ||
