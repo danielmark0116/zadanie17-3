@@ -1,4 +1,4 @@
-const osInfo = require('../modules/osInfo');
+const osInfo = require('./modules/osInfo');
 
 process.stdin.setEncoding('utf-8');
 

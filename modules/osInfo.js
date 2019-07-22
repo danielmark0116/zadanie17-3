@@ -1,5 +1,6 @@
 const os = require('os');
 const time = require('./timeFormat');
+const colors = require('colors');
 
 function getOsInfo() {
   let type = os.type();
@@ -13,9 +14,11 @@ function getOsInfo() {
     ? (type = 'Windows')
     : true;
   process.stdout.write(
-    `System: ${type}\nRelease: ${release}\nCPU model: ${cpu}\nUptime: ${uptime}\nUsername: ${
+    `${'System'.green}: ${type}\n${'Release'.red}: ${release}\n${
+      'CPU model'.magenta
+    }: ${cpu}\n${'Uptime'.yellow}: ${uptime}\n${'Username'.cyan}: ${
       userInfo.username
-    }\nHome dir: ${userInfo.homedir}\n`
+    }\n${'Home dir'.bgMagenta}: ${userInfo.homedir}\n`
   );
 
   process.exit();

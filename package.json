@@ -1,0 +1,23 @@
+{
+  "name": "zadanie17-3",
+  "version": "1.0.0",
+  "description": "Simple node.js app returning various info to the console",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmark0116/zadanie17-3.git"
+  },
+  "keywords": [],
+  "author": "Daniel Grychtoł",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielmark0116/zadanie17-3/issues"
+  },
+  "homepage": "https://github.com/danielmark0116/zadanie17-3#readme",
+  "dependencies": {
+    "colors": "^1.3.3"
+  }
+}
